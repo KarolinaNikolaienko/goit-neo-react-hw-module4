@@ -1,6 +1,9 @@
-.searchBar {
-    position:sticky;
+.header {
+    position: sticky;
     top: 0;
+}
+
+.searchBar {
     display: flex;
     align-items: center;
     justify-content: center;
