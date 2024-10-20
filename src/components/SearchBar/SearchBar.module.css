@@ -1,11 +1,12 @@
 .searchBar {
-    position:static;
+    position:sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5px;
-    background-color: #454aba;
-    box-shadow: 0 1px 2px 1px rgba(0,0,0, 0.3);
+    background-color: var(--primary-color);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
 }
 
 .inputWrapper {
@@ -27,7 +28,7 @@
 
 .searchInput:hover,
 .searchInput:active {
-    outline: 1px solid #b3b6f1;
+    outline: 1px solid var(--secondary-color);
 }
 
 .searchBtn {
@@ -39,11 +40,9 @@
     align-items: center;
     width: 30px;
     height: 100%;
-    border: none;
-    outline: none;
     background: transparent;
 }
 
 .searchBtn:hover > .searchImage {
-    fill: #454aba;
+    fill: var(--primary-color);
 }

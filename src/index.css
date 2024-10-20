@@ -11,6 +11,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primary-color: #454aba;
+  --secondary-color: #b3b6f1;
+  --btn-hover: #2e317b;
 }
 
 * {
@@ -39,4 +43,6 @@ h1 {
 
 button {
   cursor: pointer;
+  border: none;
+  outline: none;
 }

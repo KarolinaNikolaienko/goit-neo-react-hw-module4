@@ -1,0 +1,12 @@
+.loadMoreBtn {
+    padding: 5px 5px;
+    width: 125px;
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.loadMoreBtn:hover {
+    background-color: var(--btn-hover);
+}
