@@ -1,5 +1,6 @@
 import './App.css';
 import ImageGallery from './components/ImageGallery/ImageGallery';
+import Loader from './components/Loader/Loader';
 import LoadMoreBtn from './components/LoadMoreBtn/LoadMoreBtn';
 import SearchBar from './components/SearchBar/SearchBar';
 
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
       <SearchBar />
+      <Loader loading={false} />
       <ImageGallery images={images} />
       <LoadMoreBtn />
     </>
