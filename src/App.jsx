@@ -34,7 +34,6 @@ function App() {
         const response = await axios.get(
           `https://api.unsplash.com/search/photos?${config}`
         );
-        console.log(response);
         setImages(prevImages => {
           return [...prevImages, ...response.data.results];
         });
@@ -64,10 +63,11 @@ function App() {
   }
 
   function afterOpenModal() {
-    // subtitle.style.color = '#f00';
+    document.body.style.overflow = 'hidden';
   }
 
   function closeModal() {
+    document.body.style.overflow = 'scroll';
     setIsOpen(false);
   }
 
