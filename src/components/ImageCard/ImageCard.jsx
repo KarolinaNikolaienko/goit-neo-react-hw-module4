@@ -3,7 +3,11 @@ import css from './ImageCard.module.css';
 const ImageCard = ({ image, onImageClick }) => {
   return (
     <div className={css.imageCard} onClick={() => onImageClick(image)}>
-      <img src="" alt={image} className={css.image} />
+      <img
+        src={image.urls.small}
+        alt={image.description}
+        className={css.image}
+      />
     </div>
   );
 };

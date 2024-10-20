@@ -14,6 +14,7 @@ const customStyles = {
     backgroundColor: '#111111',
     border: 'none',
     color: 'white',
+    padding: '0',
   },
   overlay: {
     backgroundColor: 'rgba(0,0,0,0.7)',
@@ -31,12 +32,21 @@ const ImageModal = ({ image, modalIsOpen, afterOpenModal, closeModal }) => {
         style={customStyles}
       >
         <div className={css.modalWrapper}>
-          <img src="" alt={image} className={css.modalImage} />
+          <img
+            className={css.modalImage}
+            src={image.urls.full}
+            alt={image.description}
+            width={image.width}
+            height={image.height}
+          />
           <div className={css.imageInfo}>
-            <p>dfghjkljh</p>
-            <p>dfghjkljh</p>
-            <p>dfghjkljh</p>
-            <p>dfghjkljh</p>
+            <p>
+              Uploaded by{' '}
+              <a href={image.user.links.html} target="_blank">
+                {image.user.name}
+              </a>
+            </p>
+            <p>Likes {image.likes}</p>
           </div>
         </div>
       </ReactModal>
